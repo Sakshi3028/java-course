@@ -11,7 +11,13 @@ public class error {
           System.out.println(a/b);//risky code
         }
         catch(ArithmeticException e){
-        System.out.println("division by zero is not allowed");
+        System.out.println(e.getMessage());
+        }
+        finally{
+            //this always run
+             System.out.println("heyy..");
+             //cleanup code 
+             //resources close
         }
         System.out.println("Step 2");
     }
