@@ -6,7 +6,7 @@ public class threading {
     // t1.start();
     // }
   Myrunnable r1= new Myrunnable();
- Thread t1 = new Thread(r1);
+ Thread t1 = new Thread()=> System.out.println("thread is running");
  t1.start();
 
 }
